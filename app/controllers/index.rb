@@ -4,7 +4,7 @@ get '/' do
 end
 
 get '/login' do
-  erb :
+  erb :_login
 end
 
 post '/login' do
