@@ -1,0 +1,42 @@
+.container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted black;
+}
+th {
+  text-align: left;
+}
+
+header{
+  height: 64px;
+  width:100%;
+  background-color: navy;
+  color:white;
+  text-align: center;
+}
+
+header h1 {
+  margin-top: 0px;
+  line-height: 64px;
+}
+
+.index_btn {
+  text-align: center;
+  position:relative; top: 300px;
+}
+
+.login {
+  display:inline;
+  margin-right: 20px;
+}
+
+.login_btn {
+  padding: 50px 25px;
+  background-color: navy;
+  color:white;
+  border:1px solid black;
+  box-shadow: 2px 2px 2px grey;
+  border-radius: 10px;
+
+}
