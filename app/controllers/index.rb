@@ -7,6 +7,10 @@ get '/login' do
   erb :_login
 end
 
+
+
+# ************* POST ROUTES ********************
+
 post '/login' do
 
 end

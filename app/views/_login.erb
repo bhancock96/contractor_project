@@ -1,13 +1,17 @@
-<form action="/login" method="post">
-  <input type="text" name="">
-  <input type="text" name="">
-  <input type="submit">
-</form>
+<div class="login-box">
+  <form action="/login" method="post">
+    <input type="text" name="user[email]" placeholder='Email'>
+    <input type="password" name="user[password]" placeholder='Password'>
+    <input type="submit" value="login">
+  </form>
+</div>
 
-
-<form action="/create" method="post">
-  <input type="text" name="">
-  <input type="text" name="">
-  <input type="text" name="">
-  <input type="text" name="">
-</form>
+<div class="register-box">
+  <form action="/create" method="post">
+    <input type="text" name="user[first_name]" placeholder="First Name">
+    <input type="text" name="user[last_name]" placeholder="Last Name">
+    <input type="text" name="user[email]" placeholder='Email'>
+    <input type="password" name="user[password]" placeholder='Password'>
+    <input type="submit">
+  </form>
+</div>
