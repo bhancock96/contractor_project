@@ -12,5 +12,7 @@ end
 # ************* POST ROUTES ********************
 
 post '/login' do
+  # if type is homeowner - create homeowner
+  # elsif type is contractor - create contractor
 
 end
