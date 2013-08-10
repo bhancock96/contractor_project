@@ -17,9 +17,15 @@
 
   <title></title>
 </head>
+<div class="background"><img src="/css/house.png" id="back-image"></div>
 <body>
-  <header>
+    <header>
     <h1>Contractor Project</h1>
+    <div class="welcome">
+      <% if current_user %>
+        <p>Welcome, <%= @user.first_name %></p><button class="button"><a href="/logout" >Logout</a></button>
+      <% end %>
+    </div>
   </header>
   <%= yield %>
 </body>
