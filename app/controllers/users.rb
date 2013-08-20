@@ -7,11 +7,17 @@ get '/user/:id' do
   end
 end
 
+get '/user/:id/bio' do
+  @user = User.find(params[:id])
+  erb :bio
+end
+
 get '/logout' do
   @user = User.find(session[:user_id])
   session[:user_id] = nil
   redirect '/'
 end
+
 
 # ================ POST ROUTES =========================
 
