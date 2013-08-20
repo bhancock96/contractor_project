@@ -118,4 +118,35 @@ input[type=text], input[type=password]{
   background-color:orange;
 }
 
+/* ===============NAV BAR ==========================*/
+
+nav {
+  float:right;
+  margin-right: 20px;
+  background-color: orange;
+  width: 200px;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 2px 2px 2px 2px black;
+}
+nav ul{
+  padding-left: 0;
+}
+
+nav li{
+  list-style-type: none;
+  border-bottom: 1px solid grey;
+  padding: 10px 0px;
+}
+
+nav a{
+  text-decoration: none;
+  color: navy;
+  padding: 10px;
+  font-size: 24px;
+}
+
+nav a:hover {
+  color: white;
+}
 
