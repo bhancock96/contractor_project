@@ -12,6 +12,23 @@ get '/user/:id/bio' do
   erb :bio
 end
 
+get '/user/:id/images' do
+  erb :images
+end
+
+get '/user/:id/ratings' do
+  erb :ratings
+end
+
+get '/user/:id/requests' do
+  erb :requests
+end
+
+get '/user/:id/promotions' do
+  erb :promotions
+end
+
+
 get '/logout' do
   @user = User.find(session[:user_id])
   session[:user_id] = nil
