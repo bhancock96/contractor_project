@@ -13,6 +13,7 @@ get '/user/:id/bio' do
 end
 
 get '/user/:id/images' do
+  @user = User.find(params[:id])
   erb :images
 end
 

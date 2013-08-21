@@ -1,0 +1,19 @@
+<div class="page"> 
+ <h1>Upload Images</h1>
+
+  <form action="" method="post" enctype="multipart/form-data">
+   <!--  <strong>Username:</strong>
+    <input type="text" name="username"><br> -->
+    <strong>File:</strong>
+    <input type="file" name="upload"><br>
+    <button type="submit">Upload!</button>
+  </form>
+
+  <a href="/uploads/whee.png">Whee!</a>
+
+  <% if @user.photos %>
+    <% @user.photos.each do |photo| %>
+    <img src="<%= photo.filepath %>" alt="">
+    <% end %>
+  <% end %>
+</div>

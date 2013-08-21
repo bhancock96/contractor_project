@@ -17,6 +17,7 @@ gem 'bcrypt-ruby', '~>3.0.0'
 gem 'rake'
 
 gem 'shotgun'
+gem 'carrierwave'
 
 group :test do
   gem 'faker'
