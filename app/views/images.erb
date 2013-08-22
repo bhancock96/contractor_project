@@ -9,8 +9,6 @@
     <button type="submit">Upload!</button>
   </form>
 
-  <a href="/uploads/whee.png">Whee!</a>
-
   <% if @user.photos %>
     <% @user.photos.each do |photo| %>
     <img src="<%= photo.filepath %>" alt="">
