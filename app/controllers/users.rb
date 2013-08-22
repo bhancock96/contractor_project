@@ -12,10 +12,7 @@ get '/user/:id/bio' do
   erb :bio
 end
 
-get '/user/:id/images' do
-  @user = User.find(params[:id])
-  erb :images
-end
+
 
 get '/user/:id/ratings' do
   erb :ratings

@@ -1,7 +1,18 @@
 <div class="page"> 
- <h1>Upload Images</h1>
 
-  <form action="" method="post" enctype="multipart/form-data">
+  
+  <nav>
+    <ul>
+      <li><a href="/user/<%= @user.id %>/bio">Bio</a></li>
+      <li><a href="/user/<%= @user.id %>/ratings">Ratings/Comments</a></li>
+      <li><a href="/user/<%= @user.id %>/requests">Requests</a></li>
+      <li><a href="/user/<%= @user.id %>/promotions">Promotions</a></li>
+    </ul>
+  </nav>
+
+
+  <form action="/user/<%= @user.id %>/images" method="post" enctype="multipart/form-data" class="image_form">
+  <h1 class="subheading">Upload Images</h1>
    <!--  <strong>Username:</strong>
     <input type="text" name="username"><br> -->
     <strong>File:</strong>
@@ -9,9 +20,11 @@
     <button type="submit">Upload!</button>
   </form>
 
-  <% if @user.photos %>
-    <% @user.photos.each do |photo| %>
-    <img src="<%= photo.filepath %>" alt="">
+  <div class="photos">
+    <% if @user.photos %>
+      <% @user.photos.each do |photo| %>
+      <img src="<%= photo.filepath %>" alt="" class="photo">
+      <% end %>
     <% end %>
-  <% end %>
+  </div>
 </div>

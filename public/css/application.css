@@ -29,6 +29,8 @@
   z-index: 1;
 }
 
+
+
 th {
   text-align: left;
 }
@@ -84,6 +86,16 @@ h3 {
   display: inline;
   margin-right: 10px;
 }
+
+.photos {
+  width: 1000px;
+}
+
+.image_form {
+  display: inline-block;
+}
+
+
 
 /* ==================FORMS=============================*/
 

@@ -1,7 +1,18 @@
 $(document).ready(function() {
-  // This is called after the document has loaded in its entirety
-  // This guarantees that any elements we bind to will exist on the page
-  // when we try to bind to them
+  $('.photo').on('mouseenter', function(){
+     $(this)
+    .css({'z-index': '99'})  /* Possibly use overflow hidden*/
+    .animate({
+    height:'300px',
+    width:'300px'
+    });
+  });
 
-  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+  $('.photo').on('mouseleave', function(){
+    $(this).css( 'z-index', '0')
+      .animate({
+      height: '200px',
+      width: '200px'
+    });
+  });
 });
